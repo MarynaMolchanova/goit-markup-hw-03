@@ -34,8 +34,7 @@ ul {
 }
 
 .header {
-  border-color: #ececec;
-  border-bottom: 1px;
+  border: 1px solid #ececec;
 }
 
 .head {
@@ -93,6 +92,10 @@ ul {
 
 .header-contacts .item + .item {
   margin-left: 50px;
+}
+
+.item.contacts {
+  padding: 32px 0px;
 }
 
 h1,
@@ -221,6 +224,11 @@ p {
   text-align: center;
 }
 
+.item {
+  background: #ffffff;
+  border: 00.4px;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -246,8 +254,12 @@ p {
   border: none;
 }
 
-.button-portfolio:last-child {
-  margin-left: 8px;
+.buttons-link {
+  margin-right: 8px;
+}
+
+.buttons-link:last-child {
+  margin-right: 0px;
 }
 
 .button-portfolio:hover,
@@ -289,10 +301,9 @@ p {
 
 .work.names {
   padding: 20px 24px;
-  border-color: #eeeeee;
-  border-bottom: 1px;
-  border-left: 1px;
-  border-right: 1px;
+  border: 1px solid #ececec;
+  border-top: none;
+  display: block;
 }
 
 .type {
@@ -307,7 +318,6 @@ p {
 
 .logo-footer {
   color: var(--hero-and-footer-color);
-  margin-bottom: 20px;
 }
 
 .contacts {
@@ -330,7 +340,6 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  padding-bottom: 9px;
 }
 
 .contacts.footer:hover,
@@ -351,10 +360,7 @@ p {
   color: var(--accents);
 }
 
-.contacts.footer.grey.number {
-  padding-bottom: 0;
-}
-
 .footer {
   background: #2f303a;
+  padding-bottom: 60px;
 }
